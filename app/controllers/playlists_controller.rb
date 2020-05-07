@@ -17,7 +17,7 @@ class PlaylistsController < ApplicationController
     if @playlist.save
         redirect_to playlists_path, notice: "creado exitosamente"
     else
-      render = :new    
+      render :new    
     end
       
   end 
