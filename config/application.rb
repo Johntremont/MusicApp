@@ -21,6 +21,7 @@ Bundler.require(*Rails.groups)
 
 module Music
   class Application < Rails::Application
+    RSpotify::authenticate("635de6d6080b473ab6312bc6a47bd4b2", "e1118a51af92423fa6a0f7e404170513")
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
@@ -31,5 +32,6 @@ module Music
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
   end
 end
